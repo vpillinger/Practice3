@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+    </dependencies>
+    <scenes>
+        <!--Spirograph View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="SpirographViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="I1d-Ze-R4n">
+                                <rect key="frame" x="20" y="0.0" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="y6q-GY-uNi" customClass="SpirographView">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="IzL-01-Nnv" customClass="HarmonigraphView">
+                                        <rect key="frame" x="280" y="0.0" width="280" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c4H-jM-Fif">
+                                <rect key="frame" x="120" y="280" width="80" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Redraw">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redraw:" destination="2" eventType="touchUpInside" id="6vM-Ei-UM8"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.001" maxValue="0.999" id="zjl-gB-Jiv">
+                                <rect key="frame" x="18" y="288" width="101" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="l">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.001" maxValue="0.999" id="5w0-Cv-8zO">
+                                <rect key="frame" x="201" y="288" width="101" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="k"/>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="l" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="551-7N-kWp">
+                                <rect key="frame" x="47" y="308" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="k " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gTM-bg-u4D">
+                                <rect key="frame" x="230" y="308" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2400" borderStyle="roundedRect" placeholder="Number of Steps" minimumFontSize="17" id="CQC-KC-974">
+                                <rect key="frame" x="12" y="385" width="188" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=".04" borderStyle="roundedRect" placeholder="Size of Steps" minimumFontSize="17" id="tuf-Ly-zlK">
+                                <rect key="frame" x="203" y="385" width="97" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Number of Steps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1Uq-MA-pu0">
+                                <rect key="frame" x="20" y="419" width="180" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Size of Steps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="0dT-UC-Oxu">
+                                <rect key="frame" x="203" y="419" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="harmonigraphView" destination="IzL-01-Nnv" id="day-sR-Uji"/>
+                        <outlet property="k" destination="5w0-Cv-8zO" id="oWa-MY-bCR"/>
+                        <outlet property="kLabel" destination="gTM-bg-u4D" id="7mS-CW-RrE"/>
+                        <outlet property="l" destination="zjl-gB-Jiv" id="GGD-Bo-xZJ"/>
+                        <outlet property="lLablel" destination="551-7N-kWp" id="h68-zm-aUf"/>
+                        <outlet property="numberOfSteps" destination="CQC-KC-974" id="guH-Q4-rsn"/>
+                        <outlet property="scrollView" destination="I1d-Ze-R4n" id="Kzb-Rn-SWs"/>
+                        <outlet property="sizeOfSteps" destination="tuf-Ly-zlK" id="7NQ-wr-FxL"/>
+                        <outlet property="spirographView" destination="y6q-GY-uNi" id="WZL-E9-lI9"/>
+                    </connections>
+                </viewController>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="HarmonigraphView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HarmonigraphView.h"/>
+        </class>
+        <class className="SpirographView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SpirographView.h"/>
+        </class>
+        <class className="SpirographViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SpirographViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="redraw:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="harmonigraphView" candidateClass="HarmonigraphView"/>
+                <relationship kind="outlet" name="k" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="kLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="lLablel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="numberOfSteps" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="sizeOfSteps" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="spirographView" candidateClass="SpirographView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

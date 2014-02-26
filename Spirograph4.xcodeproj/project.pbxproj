@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D0635DC18BCF8890068B239 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0635DB18BCF8890068B239 /* UIKit.framework */; };
+		8D0635DE18BCF8890068B239 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0635DD18BCF8890068B239 /* Foundation.framework */; };
+		8D0635E018BCF8890068B239 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0635DF18BCF8890068B239 /* CoreGraphics.framework */; };
+		8D0635E618BCF8890068B239 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D0635E418BCF8890068B239 /* InfoPlist.strings */; };
+		8D0635E818BCF8890068B239 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0635E718BCF8890068B239 /* main.m */; };
+		8D0635FD18BCF8890068B239 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0635FC18BCF8890068B239 /* SenTestingKit.framework */; };
+		8D0635FE18BCF8890068B239 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0635DB18BCF8890068B239 /* UIKit.framework */; };
+		8D0635FF18BCF8890068B239 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0635DD18BCF8890068B239 /* Foundation.framework */; };
+		8D06360718BCF8890068B239 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D06360518BCF8890068B239 /* InfoPlist.strings */; };
+		8D06360A18BCF8890068B239 /* Spirograph4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D06360918BCF8890068B239 /* Spirograph4Tests.m */; };
+		8D06361E18BCF9530068B239 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D06361718BCF9530068B239 /* MainStoryboard.storyboard */; };
+		8D06361F18BCF9530068B239 /* HarmonigraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D06361918BCF9530068B239 /* HarmonigraphView.m */; };
+		8D06362018BCF9530068B239 /* SpirographAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D06361B18BCF9530068B239 /* SpirographAppDelegate.m */; };
+		8D06362118BCF9530068B239 /* SpirographViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D06361D18BCF9530068B239 /* SpirographViewController.m */; };
+		8D162E1C18BD083B0082C770 /* SpirographView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D162E1B18BD083B0082C770 /* SpirographView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D06360018BCF8890068B239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D0635CE18BCF8890068B239 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D0635D618BCF8890068B239;
+			remoteInfo = Spirograph4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D0635D718BCF8890068B239 /* Spirograph4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spirograph4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0635DB18BCF8890068B239 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8D0635DD18BCF8890068B239 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8D0635DF18BCF8890068B239 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8D0635E318BCF8890068B239 /* Spirograph4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spirograph4-Info.plist"; sourceTree = "<group>"; };
+		8D0635E518BCF8890068B239 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D0635E718BCF8890068B239 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D0635E918BCF8890068B239 /* Spirograph4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spirograph4-Prefix.pch"; sourceTree = "<group>"; };
+		8D0635FB18BCF8890068B239 /* Spirograph4Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Spirograph4Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0635FC18BCF8890068B239 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8D06360418BCF8890068B239 /* Spirograph4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spirograph4Tests-Info.plist"; sourceTree = "<group>"; };
+		8D06360618BCF8890068B239 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D06360818BCF8890068B239 /* Spirograph4Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spirograph4Tests.h; sourceTree = "<group>"; };
+		8D06360918BCF8890068B239 /* Spirograph4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Spirograph4Tests.m; sourceTree = "<group>"; };
+		8D06361718BCF9530068B239 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8D06361818BCF9530068B239 /* HarmonigraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HarmonigraphView.h; sourceTree = "<group>"; };
+		8D06361918BCF9530068B239 /* HarmonigraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HarmonigraphView.m; sourceTree = "<group>"; };
+		8D06361A18BCF9530068B239 /* SpirographAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpirographAppDelegate.h; sourceTree = "<group>"; };
+		8D06361B18BCF9530068B239 /* SpirographAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpirographAppDelegate.m; sourceTree = "<group>"; };
+		8D06361C18BCF9530068B239 /* SpirographViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpirographViewController.h; sourceTree = "<group>"; };
+		8D06361D18BCF9530068B239 /* SpirographViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpirographViewController.m; sourceTree = "<group>"; };
+		8D162E1A18BD083B0082C770 /* SpirographView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpirographView.h; sourceTree = "<group>"; };
+		8D162E1B18BD083B0082C770 /* SpirographView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpirographView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0635D418BCF8890068B239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0635DC18BCF8890068B239 /* UIKit.framework in Frameworks */,
+				8D0635DE18BCF8890068B239 /* Foundation.framework in Frameworks */,
+				8D0635E018BCF8890068B239 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0635F718BCF8890068B239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0635FD18BCF8890068B239 /* SenTestingKit.framework in Frameworks */,
+				8D0635FE18BCF8890068B239 /* UIKit.framework in Frameworks */,
+				8D0635FF18BCF8890068B239 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D0635CC18BCF8890068B239 = {
+			isa = PBXGroup;
+			children = (
+				8D0635E118BCF8890068B239 /* Spirograph4 */,
+				8D06360218BCF8890068B239 /* Spirograph4Tests */,
+				8D0635DA18BCF8890068B239 /* Frameworks */,
+				8D0635D818BCF8890068B239 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D0635D818BCF8890068B239 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0635D718BCF8890068B239 /* Spirograph4.app */,
+				8D0635FB18BCF8890068B239 /* Spirograph4Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D0635DA18BCF8890068B239 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D0635DB18BCF8890068B239 /* UIKit.framework */,
+				8D0635DD18BCF8890068B239 /* Foundation.framework */,
+				8D0635DF18BCF8890068B239 /* CoreGraphics.framework */,
+				8D0635FC18BCF8890068B239 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D0635E118BCF8890068B239 /* Spirograph4 */ = {
+			isa = PBXGroup;
+			children = (
+				8D06361718BCF9530068B239 /* MainStoryboard.storyboard */,
+				8D162E1A18BD083B0082C770 /* SpirographView.h */,
+				8D162E1B18BD083B0082C770 /* SpirographView.m */,
+				8D06361818BCF9530068B239 /* HarmonigraphView.h */,
+				8D06361918BCF9530068B239 /* HarmonigraphView.m */,
+				8D06361A18BCF9530068B239 /* SpirographAppDelegate.h */,
+				8D06361B18BCF9530068B239 /* SpirographAppDelegate.m */,
+				8D06361C18BCF9530068B239 /* SpirographViewController.h */,
+				8D06361D18BCF9530068B239 /* SpirographViewController.m */,
+				8D0635E218BCF8890068B239 /* Supporting Files */,
+			);
+			path = Spirograph4;
+			sourceTree = "<group>";
+		};
+		8D0635E218BCF8890068B239 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D0635E318BCF8890068B239 /* Spirograph4-Info.plist */,
+				8D0635E418BCF8890068B239 /* InfoPlist.strings */,
+				8D0635E718BCF8890068B239 /* main.m */,
+				8D0635E918BCF8890068B239 /* Spirograph4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D06360218BCF8890068B239 /* Spirograph4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8D06360818BCF8890068B239 /* Spirograph4Tests.h */,
+				8D06360918BCF8890068B239 /* Spirograph4Tests.m */,
+				8D06360318BCF8890068B239 /* Supporting Files */,
+			);
+			path = Spirograph4Tests;
+			sourceTree = "<group>";
+		};
+		8D06360318BCF8890068B239 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D06360418BCF8890068B239 /* Spirograph4Tests-Info.plist */,
+				8D06360518BCF8890068B239 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0635D618BCF8890068B239 /* Spirograph4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D06360D18BCF8890068B239 /* Build configuration list for PBXNativeTarget "Spirograph4" */;
+			buildPhases = (
+				8D0635D318BCF8890068B239 /* Sources */,
+				8D0635D418BCF8890068B239 /* Frameworks */,
+				8D0635D518BCF8890068B239 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spirograph4;
+			productName = Spirograph4;
+			productReference = 8D0635D718BCF8890068B239 /* Spirograph4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D0635FA18BCF8890068B239 /* Spirograph4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D06361018BCF8890068B239 /* Build configuration list for PBXNativeTarget "Spirograph4Tests" */;
+			buildPhases = (
+				8D0635F618BCF8890068B239 /* Sources */,
+				8D0635F718BCF8890068B239 /* Frameworks */,
+				8D0635F818BCF8890068B239 /* Resources */,
+				8D0635F918BCF8890068B239 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D06360118BCF8890068B239 /* PBXTargetDependency */,
+			);
+			name = Spirograph4Tests;
+			productName = Spirograph4Tests;
+			productReference = 8D0635FB18BCF8890068B239 /* Spirograph4Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D0635CE18BCF8890068B239 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Spirograph;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Vincent Pillinger";
+			};
+			buildConfigurationList = 8D0635D118BCF8890068B239 /* Build configuration list for PBXProject "Spirograph4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8D0635CC18BCF8890068B239;
+			productRefGroup = 8D0635D818BCF8890068B239 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0635D618BCF8890068B239 /* Spirograph4 */,
+				8D0635FA18BCF8890068B239 /* Spirograph4Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0635D518BCF8890068B239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0635E618BCF8890068B239 /* InfoPlist.strings in Resources */,
+				8D06361E18BCF9530068B239 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0635F818BCF8890068B239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D06360718BCF8890068B239 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D0635F918BCF8890068B239 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0635D318BCF8890068B239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0635E818BCF8890068B239 /* main.m in Sources */,
+				8D06361F18BCF9530068B239 /* HarmonigraphView.m in Sources */,
+				8D06362018BCF9530068B239 /* SpirographAppDelegate.m in Sources */,
+				8D06362118BCF9530068B239 /* SpirographViewController.m in Sources */,
+				8D162E1C18BD083B0082C770 /* SpirographView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0635F618BCF8890068B239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D06360A18BCF8890068B239 /* Spirograph4Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D06360118BCF8890068B239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D0635D618BCF8890068B239 /* Spirograph4 */;
+			targetProxy = 8D06360018BCF8890068B239 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D0635E418BCF8890068B239 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D0635E518BCF8890068B239 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8D06360518BCF8890068B239 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D06360618BCF8890068B239 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D06360B18BCF8890068B239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D06360C18BCF8890068B239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D06360E18BCF8890068B239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spirograph4/Spirograph4-Prefix.pch";
+				INFOPLIST_FILE = "Spirograph4/Spirograph4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8D06360F18BCF8890068B239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spirograph4/Spirograph4-Prefix.pch";
+				INFOPLIST_FILE = "Spirograph4/Spirograph4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8D06361118BCF8890068B239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spirograph4.app/Spirograph4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spirograph4/Spirograph4-Prefix.pch";
+				INFOPLIST_FILE = "Spirograph4Tests/Spirograph4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8D06361218BCF8890068B239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spirograph4.app/Spirograph4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spirograph4/Spirograph4-Prefix.pch";
+				INFOPLIST_FILE = "Spirograph4Tests/Spirograph4Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D0635D118BCF8890068B239 /* Build configuration list for PBXProject "Spirograph4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D06360B18BCF8890068B239 /* Debug */,
+				8D06360C18BCF8890068B239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D06360D18BCF8890068B239 /* Build configuration list for PBXNativeTarget "Spirograph4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D06360E18BCF8890068B239 /* Debug */,
+				8D06360F18BCF8890068B239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D06361018BCF8890068B239 /* Build configuration list for PBXNativeTarget "Spirograph4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D06361118BCF8890068B239 /* Debug */,
+				8D06361218BCF8890068B239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D0635CE18BCF8890068B239 /* Project object */;
+}
